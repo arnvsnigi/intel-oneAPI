@@ -1,8 +1,8 @@
 # intel-oneAPI
 
-#### Team Name -
-#### Problem Statement - 
-#### Team Leader Email -
+#### Team Name - Single Londe
+#### Problem Statement -  Object Detection For Autonomous vehicles 
+#### Team Leader Email - arnvsnigi@gmail.com
 
 ## A Brief of the Prototype:
   This section must include UML Daigrms and prototype description
