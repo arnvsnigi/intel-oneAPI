@@ -26,7 +26,8 @@ mean Intersection Over Union (mIOU) is the metric used for validation. For each 
 
 We used MXNet framework to compute mIOU of the models on the validation set described above. Use the notebook duc-validation to verify the mIOU of the model. The scripts cityscapes_loader.py, cityscapes_labels.py and utils.py are used in the notebook for data loading and processing.
 ## Tech Stack: 
-   List Down all technologies used to Build the prototype **Clearly mentioning Intel® AI Analytics Toolkits, it's libraries and the SYCL/DCP++ Libraries used**
+### Intel® Neural Compressor
+An open-source Python library supporting popular model compression techniques on all mainstream deep learning frameworks (TensorFlow, PyTorch, ONNX Runtime, and MXNet).
    
 ## Step-by-Step Code Execution Instructions:
 ## Inference
@@ -34,11 +35,11 @@ We utilized MXNet as our framework for carrying out the process of inference. To
 ## Model
 The model ResNet101_DUC_HDC uses ResNet101 as a backend network with both Dense Upsampling Convolution (DUC) and Hybrid Dilated Convolution (HDC) techniques.
 
-|Model        |Download  |Download (with sample test data)| ONNX version |Opset version|[mIOU](#metric) (%)|
-|-------------|:--------------|:--------------|:--------------|:--------------|:--------------|
-|ResNet101_DUC_HDC|    [248.6 MB](model/ResNet101-DUC-7.onnx) | [282.0 MB](model/ResNet101-DUC-7.tar.gz) |1.2.2  |7 |81.92 |
-|ResNet101_DUC_HDC-12|    [248.6 MB](model/ResNet101-DUC-12.onnx) | [247.3 MB](model/ResNet101-DUC-12.tar.gz) |1.9.0  |12 |81.92 |
-|ResNet101_DUC_HDC-12-int8|    [62.5 MB](model/ResNet101-DUC-12-int8.onnx) | [67.8 MB](model/ResNet101-DUC-12-int8.tar.gz) |1.9.0  |12 |81.62 |
+|Model        |Download  | ONNX version |[mIOU](#metric) (%)|
+|-------------|:--------------|:--------------|:--------------|
+|ResNet101_DUC_HDC|    [248.6 MB](model/ResNet101-DUC-7.onnx)  |1.2.2  |81.92 |
+|ResNet101_DUC_HDC-12-int8|   [62.5 MB](model/ResNet101-DUC-12-int8.onnx)  |1.9.0  |81.62 |
+
 > Compared with the ResNet101_DUC_HDC-12, ResNet101_DUC_HDC-12-int8's mIOU decline ratio is 0.37% and performance improvement is 1.69x.
 >
 > Note the performance depends on the test hardware. 
