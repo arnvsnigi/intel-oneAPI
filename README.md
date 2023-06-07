@@ -91,4 +91,4 @@ Overall, developing the CitySegNet prototype would have provided you with a hand
 * All models are from the paper [Understanding Convolution for Semantic Segmentation](https://arxiv.org/abs/1702.08502).
 * [TuSimple-DUC repo](https://github.com/TuSimple/TuSimple-DUC), [MXNet](http://mxnet.incubator.apache.org)
 * [Intel® Neural Compressor](https://github.com/intel/neural-compressor)
-* [DUC github object-detection-segmentation by jcwchen]
+* DUC github object-detection-segmentation by jcwchen
