@@ -57,10 +57,14 @@ The DUC (Dense Upsampling Convolution) layer divides the image into d^2 subparts
 
 ### Output
 The output of the network is a tensor of shape (1 X `label_num` X `H` * `W`) where `H` and `W` are the height and width of the output segmented map.
-* **Run Prediction**:
+### Run Prediction:
+### For running inference on images
 ```bash
 python duc-inference.py city_example.jpg
 ```
+### For running inference on Realtime Videos
+Refer [infer_video.ipynb](infer_video.ipynb)
+
 ### Postprocessing
 The output tensor is reshaped and resized to give the softmax map of shape (`H` X `W` X `label_num`). The raw label map is computed by doing an argmax on the softmax map. The script [cityscapes_labels.py](dependencies/cityscapes_labels.py) contains the segmentation category labels and their corresponding color map. Using this the colorized segmented images are generated. Check [postprocess.py](dependencies/postprocess.py) for code.<br><br>
 ![Screenshot 2023-06-08 at 1 20 15 AM](https://github.com/arnvsnigi/intel-oneAPI/assets/22290716/638642ab-df04-44eb-8825-537a0ba5dbb7)
