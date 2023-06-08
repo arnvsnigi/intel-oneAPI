@@ -28,6 +28,8 @@ We used MXNet framework to compute mIOU of the models on the validation set desc
 ## Tech Stack: 
 ### Intel® Neural Compressor
 An open-source Python library supporting popular model compression techniques on all mainstream deep learning frameworks (TensorFlow, PyTorch, ONNX Runtime, and MXNet).
+### Intel® Extension for PyTorch\*
+Intel® Extension for PyTorch\* extends PyTorch\* with up-to-date features optimizations for an extra performance boost on Intel hardware. 
    
 ## Step-by-Step Code Execution Instructions:
 ## Inference
