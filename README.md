@@ -4,7 +4,7 @@
 #### Problem Statement -  Object Detection For Autonomous vehicles 
 #### Team Leader Email - arnvsnigi@gmail.com
 
-## A Brief of the Prototye:
+## A Brief of the Prototype:
 ### Prototype Name:
 CitySegNet 
 ### Description:
