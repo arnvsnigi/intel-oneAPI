@@ -1,8 +1,9 @@
-# intel-oneAPI
+# Intel-oneAPI
+![218504609-585bcebe-5101-4477-bdd2-3a1ba13a64a8](https://github.com/arnvsnigi/intel-oneAPI/assets/22290716/990ddfd3-354e-4c7e-ad63-8a45188437ac)
 
-#### Team Name - Single Londe
-#### Problem Statement -  Object Detection For Autonomous vehicles 
-#### Team Leader Email - arnvsnigi@gmail.com
+#### Team Name - **Single Londe**
+#### Problem Statement -  **Object Detection For Autonomous vehicles** 
+#### Team Leader Email - **arnvsnigi@gmail.com**
 
 ## A Brief of the Prototype:
 ### Prototype Name:
