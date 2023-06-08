@@ -31,7 +31,7 @@ An open-source Python library supporting popular model compression techniques on
    
 ## Step-by-Step Code Execution Instructions:
 ## Inference
-We utilized MXNet as our framework for carrying out the process of inference. To grasp the usage of the aforementioned models for inference, please refer to the notebook titled "duc-inference” [duc-inference](dependencies/duc-inference.ipynb). Below, you will find a concise explanation of the inference procedure.
+We utilized MXNet as our framework for carrying out the process of inference. To grasp the usage of the aforementioned models for inference, please refer to the notebook titled "duc-inference” [duc-inference](dependencies/inference.ipynb). Below, you will find a concise explanation of the inference procedure.
 ## Model
 The model ResNet101_DUC_HDC uses ResNet101 as a backend network with both Dense Upsampling Convolution (DUC) and Hybrid Dilated Convolution (HDC) techniques.
 
@@ -50,7 +50,7 @@ Given that the model has been trained on the cityscapes dataset, which consists 
 ![Screenshot 2023-06-08 at 1 21 52 AM](https://github.com/arnvsnigi/intel-oneAPI/assets/22290716/33a10dc1-4f18-4988-a8a3-ef455438078b)
 
 ### Preprocessing
-The DUC (Dense Upsampling Convolution) layer divides the image into d^2 subparts, where d represents the downsampling rate. To ensure accurate reshaping of the image after passing through the DUC layer, a small border is added to the input image. This extrapolation helps maintain the integrity of the reshaped image. Following this step, the image undergoes normalization through mean subtraction. Check [duc-preprocess.py](dependencies/duc-preprocess.py) for code.
+The DUC (Dense Upsampling Convolution) layer divides the image into d^2 subparts, where d represents the downsampling rate. To ensure accurate reshaping of the image after passing through the DUC layer, a small border is added to the input image. This extrapolation helps maintain the integrity of the reshaped image. Following this step, the image undergoes normalization through mean subtraction. Check [duc-preprocess.py](dependencies/preprocess.py) for code.
 
 ### Output
 The output of the network is a tensor of shape (1 X `label_num` X `H` * `W`) where `H` and `W` are the height and width of the output segmented map.
@@ -59,7 +59,7 @@ The output of the network is a tensor of shape (1 X `label_num` X `H` * `W`) whe
 python duc-inference.py city_example.jpg
 ```
 ### Postprocessing
-The output tensor is reshaped and resized to give the softmax map of shape (`H` X `W` X `label_num`). The raw label map is computed by doing an argmax on the softmax map. The script [cityscapes_labels.py](dependencies/cityscapes_labels.py) contains the segmentation category labels and their corresponding color map. Using this the colorized segmented images are generated. Check [duc-postprocess.py](dependencies/duc-postprocess.py) for code.<br><br>
+The output tensor is reshaped and resized to give the softmax map of shape (`H` X `W` X `label_num`). The raw label map is computed by doing an argmax on the softmax map. The script [cityscapes_labels.py](dependencies/cityscapes_labels.py) contains the segmentation category labels and their corresponding color map. Using this the colorized segmented images are generated. Check [duc-postprocess.py](dependencies/postprocess.py) for code.<br><br>
 ![Screenshot 2023-06-08 at 1 20 15 AM](https://github.com/arnvsnigi/intel-oneAPI/assets/22290716/638642ab-df04-44eb-8825-537a0ba5dbb7)
 ![Screenshot 2023-06-08 at 1 20 24 AM](https://github.com/arnvsnigi/intel-oneAPI/assets/22290716/e4bd8fb9-a2bf-4225-9abb-9bf407e923ad)
 
