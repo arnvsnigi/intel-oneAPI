@@ -33,7 +33,7 @@ Intel® Extension for PyTorch\* extends PyTorch\* with up-to-date features optim
    
 ## Step-by-Step Code Execution Instructions:
 ## Inference
-We utilized MXNet as our framework for carrying out the process of inference. To grasp the usage of the aforementioned models for inference, please refer to the notebook titled "duc-inference” [inference](dependencies/inference.ipynb). Below, you will find a concise explanation of the inference procedure.
+We utilized MXNet as our framework for carrying out the process of inference. To grasp the usage of the aforementioned models for inference, please refer to the notebook titled "inference” [inference](dependencies/inference.ipynb). Below, you will find a concise explanation of the inference procedure.
 ## Model
 The model ResNet101_DUC_HDC uses ResNet101 as a backend network with both Dense Upsampling Convolution (DUC) and Hybrid Dilated Convolution (HDC) techniques.
 
@@ -67,7 +67,7 @@ The output tensor is reshaped and resized to give the softmax map of shape (`H` 
 
 ### Confidence obtained
 ![Screenshot 2023-06-08 at 1 20 30 AM](https://github.com/arnvsnigi/intel-oneAPI/assets/22290716/4be86aac-1552-47de-8cbf-0b24a60cf5ba)<br><br>
-Check duc-inference.py for more.
+Check inference.py for more.
 
 
 ## What I Learned:
