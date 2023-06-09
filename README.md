@@ -74,6 +74,8 @@ The output tensor is reshaped and resized to give the softmax map of shape (`H` 
 ![Screenshot 2023-06-08 at 1 20 30 AM](https://github.com/arnvsnigi/intel-oneAPI/assets/22290716/4be86aac-1552-47de-8cbf-0b24a60cf5ba)<br><br>
 Check inference.py for more.
 
+### Medium article link
+[Object Detection For Autonomous vehicles(CitySegNet)](https://medium.com/@1ms21ai054/object-detection-for-autonomous-vehicles-citysegnet-dfb5516ad2e)
 
 ## What I Learned:
   By developing the CitySegNet prototype for image segmentation on the Cityscapes dataset, We have gained several valuable learnings and experiences, including:
